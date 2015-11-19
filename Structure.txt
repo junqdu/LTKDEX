@@ -6,6 +6,7 @@ Hero Cards
   -Health Point
   -Skills
   -ID
+  -Description
 Deck Cards
   -Basic
     -Strike
