@@ -1,0 +1,27 @@
+{
+  "name": "ltkdb",
+  "version": "0.0.1",
+  "description": "English DataBase for Legends of the Three Kingdoms.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junqdu/LTKDB.git"
+  },
+  "author": "junqdu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junqdu/LTKDB/issues"
+  },
+  "homepage": "https://github.com/junqdu/LTKDB#readme",
+  "dependencies": {
+    "angular": "^1.4.8",
+    "bootstrap": "^3.3.5",
+    "bootstrap-sass": "^3.3.5",
+    "bower": "^1.6.5",
+    "grunt": "^0.4.5",
+    "jshint": "^2.9.1-rc1"
+  }
+}
