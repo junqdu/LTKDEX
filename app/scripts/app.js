@@ -10,6 +10,7 @@
  */
 angular
   .module('ltkdbApp', [
+    'ngResource',
     'ngRoute',
     'ngSanitize'
   ])
