@@ -1,6 +1,8 @@
-<div class="floating-box" ng-repeat="hero in main.heroes | orderBy:id">
-  <a href="https://www.google.com">
-  <img id="heroThumbnail" ng-src="images/{{hero.id}}.png">
-  <span ng-class="main.getLabel(hero.allegiance)">{{hero.lastName}} {{hero.firstName}}</span>
-</a>
+<div class="row">
+  <div class="col-xs-4 col-md-2 vcenter" ng-repeat="hero in main.heroes | orderBy:id">
+    <a href="#/heroes/{{hero.id}}" class="thumbnail">
+      <img src="images/{{hero.id}}.png">
+      <span ng-class="main.getLabel(hero.allegiance)">{{hero.lastName}} {{hero.firstName}}</span>
+    </a>
+  </div>
 </div>
