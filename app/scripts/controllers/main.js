@@ -8,10 +8,20 @@
  * Controller of the ltkdbApp
  */
 angular.module('ltkdbApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function (Heroes) {
+    this.allegianceMap = ['Shu', 'Wei', 'Wu', 'Neutral'];
+    this.heroes = Heroes.get();
+
+    this.getLabel = function(allegiance) {
+      switch(allegiance) {
+        case 1:
+          return 'label label-danger';
+        case 2:
+          return 'label label-primary';
+        case 3:
+          return 'label label-success';
+        case 4:
+          return 'label label-default';
+      }
+    };
   });
