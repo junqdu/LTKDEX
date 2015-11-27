@@ -1,6 +1,6 @@
-<ul class="phones">
-  <li ng-repeat="hero in main.heroes | orderBy:id">
-    <img id="heroThumbnail" ng-src="images/{{hero.id}}.png">
-    <span ng-class="main.getLabel(hero.allegiance)">{{hero.firstName}} {{hero.lastName}}</span>
-  </li>
-</ul>
+<div class="floating-box" ng-repeat="hero in main.heroes | orderBy:id">
+  <a href="https://www.google.com">
+  <img id="heroThumbnail" ng-src="images/{{hero.id}}.png">
+  <span ng-class="main.getLabel(hero.allegiance)">{{hero.lastName}} {{hero.firstName}}</span>
+</a>
+</div>
