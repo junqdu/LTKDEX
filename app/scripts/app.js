@@ -21,6 +21,11 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
+      .when('/heroes/:id', {
+        templateUrl: 'views/hero.html',
+        controller: 'HeroCtrl',
+        controllerAs: 'hero'
+      })
       .otherwise({
         redirectTo: '/'
       });
