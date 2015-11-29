@@ -12,7 +12,8 @@ angular
   .module('ltkdbApp', [
     'ngResource',
     'ngRoute',
-    'ngSanitize'
+    'ngSanitize',
+    'angular-toArrayFilter'
   ])
   .config(function ($routeProvider) {
     $routeProvider
