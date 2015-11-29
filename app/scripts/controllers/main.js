@@ -10,7 +10,13 @@
 angular.module('ltkdbApp')
   .controller('MainCtrl', function (Heroes) {
     this.allegianceMap = ['Shu', 'Wei', 'Wu', 'Neutral'];
-    this.heroes = Heroes.get();
+    this.heroes = Heroes.get({}, function(heroes){
+      angular.forEach(heroes, function(hero){
+        hero.name = hero.lastName + ' ' + hero.firstName;
+        delete hero.lastName;
+        delete hero.firstName;
+      });
+    });
 
     this.getLabel = function(allegiance) {
       switch(allegiance) {
@@ -20,7 +26,7 @@ angular.module('ltkdbApp')
           return 'label label-primary';
         case 3:
           return 'label label-success';
-        case 4:
+        case 0:
           return 'label label-default';
       }
     };

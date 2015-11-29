@@ -18,14 +18,14 @@ angular.module('ltkdbApp')
 
     this.getLabel = function(allegiance) {
       switch(allegiance) {
+        case 0:
+          return 'label label-default';
         case 1:
           return 'label label-danger';
         case 2:
           return 'label label-primary';
         case 3:
           return 'label label-success';
-        case 4:
-          return 'label label-default';
       }
     };
   });
